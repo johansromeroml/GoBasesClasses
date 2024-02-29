@@ -22,7 +22,7 @@ func TestTaxesFromSalary_above50000(t *testing.T) {
 	//Act
 	result := TaxesFromSalary(salary)
 	//Assert
-	if result != expectedResult {
+	if int(result*1000000) != int(expectedResult*1000000) {
 		t.Errorf("Obtainded %f, but expected %f", result, expectedResult)
 	}
 }

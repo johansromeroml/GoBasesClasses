@@ -10,13 +10,13 @@ const (
 )
 
 func main() {
-	animalDog, msg := animal(dog)
+	animalDog, msg := Animal(dog)
 	fmt.Print(msg)
-	animalCat, msg := animal(cat)
+	animalCat, msg := Animal(cat)
 	fmt.Print(msg)
-	animalHamster, msg := animal(hamster)
+	animalHamster, msg := Animal(hamster)
 	fmt.Print(msg)
-	animalSpider, msg := animal(spider)
+	animalSpider, msg := Animal(spider)
 	fmt.Print(msg)
 	var amount float64
 	amount += animalDog(10)
@@ -27,7 +27,7 @@ func main() {
 	fmt.Println("Total food amount: ", amount)
 }
 
-func animal(op string) (f func(int) float64, err string) {
+func Animal(op string) (f func(int) float64, err string) {
 	switch op {
 	case dog:
 		f = dogFood
