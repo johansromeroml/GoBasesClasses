@@ -1,0 +1,1 @@
+This class exercises are used onto class 3 functions, so the testing files are on the class 3 folder
