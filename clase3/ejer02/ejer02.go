@@ -4,11 +4,11 @@ import "fmt"
 
 func main() {
 	grades := []float64{1, 2, 3, 4, 5, 3.5, 4.2, 2.8, 2.5, 5, 5}
-	avg, err := averageFromSlice(grades)
+	avg, err := AverageFromSlice(grades)
 	fmt.Println("Grades: ", grades, err, "Average: ", avg)
 }
 
-func averageFromSlice(grades []float64) (average float64, err string) {
+func AverageFromSlice(grades []float64) (average float64, err string) {
 	size := len(grades)
 	negatives := false
 	for _, v := range grades {
