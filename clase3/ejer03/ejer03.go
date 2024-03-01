@@ -1,12 +1,6 @@
 package main
 
-import "fmt"
-
-func main() {
-	fmt.Println(salaryCalculationCategoryHours("D", 100))
-}
-
-func salaryCalculationCategoryHours(cat string, hours int) int {
+func SalaryCalculationCategoryHours(cat string, hours int) int {
 	switch cat {
 	case "A":
 		return hours * 1000
