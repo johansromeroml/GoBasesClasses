@@ -1,3 +1,7 @@
 go 1.21.7
 
-use ./clase3/ejer03
+use (
+	./clase3/ejer03
+	./clase5/ejer01
+	./clase5/ejer02
+)
